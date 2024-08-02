@@ -21,7 +21,7 @@ class Chat {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['id'] = id;
     data['participants'] = participants;
-    data['messages'] = messages?.map((m) => m.toJson()).toList();
+    data['messages'] = messages?.map((m) => m.toJson()).toList() ?? [];
     return data;
   }
 }
